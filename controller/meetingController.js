@@ -68,7 +68,6 @@ export const createMeeting = async (req, res) => {
       startTime,
       endTime,
       duration,
-      deleteAt,
       students: [],
     });
 
@@ -450,3 +449,4 @@ export const deleteMeeting = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
